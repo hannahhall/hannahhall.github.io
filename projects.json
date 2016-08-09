@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "checkers": {
+      "name": "Checkers",
+      "img": "img/checkersScreen.png",
+      "description": "Checkers is an online game room for playing checkers. Players can also message their opponents during game play. Front end Capstone Project built with AngularJS and Firebase."
+    },
+    "foodFight": {
+      "name": "Food Fight",
+      "img": "img/foodFightScreen.png",
+      "description": "Food vs. Chef, Food Fight is a text based game of chance. A group project built with jQuery."
+    }
+  }
+}
