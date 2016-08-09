@@ -1,3 +1,136 @@
-header {
-	font-size: 2em;
-}
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Poiret+One|Raleway';
+body {
+  background-color: #f4ecd6; }
+
+a {
+  text-decoration: none;
+  color: #310a31; }
+
+a:hover {
+  text-decoration: none; }
+
+.header {
+  background: linear-gradient(transparent 40%, #88b7b5), url("img/IMG_5879.JPG") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: #310a31;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 0 2em #769e9d; }
+  .header h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 3em; }
+
+.imgHolder {
+  background: url("img/profilepic.jpg") no-repeat center center;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 10px solid #310a31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em; }
+
+.navBar {
+  width: 100%;
+  font-family: "Poiret One", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+  margin-top: 5em; }
+  .navBar a {
+    color: #310a31;
+    text-decoration: none;
+    font-size: 2em;
+    text-shadow: 1px 0 #310a31;
+    letter-spacing: 0.5em; }
+  .navBar a:hover {
+    color: white; }
+
+.stick {
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #88b7b5;
+  box-shadow: 0 0 2em #769e9d; }
+
+#projects {
+  height: 100vh; }
+
+#about {
+  height: 100vh; }
+
+.projects,
+.about {
+  padding-top: 4em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #310a31; }
+  .projects h1,
+  .about h1 {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    font-family: "Pacifico", cursive; }
+  .projects .project1,
+  .projects .project2,
+  .about .project1,
+  .about .project2 {
+    border: 3px solid #310a31;
+    margin: 4em;
+    padding: 0.5em;
+    font-family: "Poiret One", sans-serif;
+    text-shadow: 0.5px 0.5px 0.5px #310a31;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    max-width: 350px;
+    letter-spacing: 0.5em; }
+    .projects .project1 h2,
+    .projects .project2 h2,
+    .about .project1 h2,
+    .about .project2 h2 {
+      margin: 0; }
+    .projects .project1 p,
+    .projects .project2 p,
+    .about .project1 p,
+    .about .project2 p {
+      display: inline;
+      font-size: 1.25em;
+      letter-spacing: 0.1em;
+      text-align: justify; }
+    .projects .project1 .ss,
+    .projects .project2 .ss,
+    .about .project1 .ss,
+    .about .project2 .ss {
+      margin: 1em 0;
+      border: 1px solid #310a31; }
+
+.bio {
+  border: 3px solid #310a31;
+  margin: 3em;
+  padding: 0.5em;
+  font-family: "Poiret One", sans-serif;
+  text-shadow: 0.5px 0.5px 0.5px #310a31;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  max-width: 75%; }
+  .bio p {
+    display: inline;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 0.5em;
+    text-align: justify; }
