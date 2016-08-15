@@ -3,3 +3,4 @@ gulpfile.js
 package.json
 .DS_Store
 *.scss
+.eslintrc.js
