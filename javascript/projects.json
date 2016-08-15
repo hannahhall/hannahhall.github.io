@@ -1,0 +1,68 @@
+{
+  "projects": {
+    "checkers": {
+      "class": "project1",
+      "name": "Checkers",
+      "img": "img/checkersScreen.png",
+      "description": "Checkers is an online game room for playing checkers. Players can also message their opponents during game play. Front end Capstone Project built with AngularJS and Firebase.",
+      "url": "http://hannahhall.github.io/checkers/#/"
+    },
+    "foodFight": {
+      "class": "project2",
+      "name": "Food Fight",
+      "img": "img/foodFightScreen.png",
+      "description": "Food vs. Chef, Food Fight is a text based game of chance. A group project built with jQuery.",
+      "url": "http://hannahhall.github.io/gauntlet-food-fight/"
+    }
+  },
+  "tech": {
+    "html": {
+      "name": "html",
+      "img": "img/tech/tech-html.png"
+    },
+    "css": {
+      "name": "CSS3",
+      "img": "img/tech/tech-css.png"
+    },
+    "sass": {
+      "name": "Sass",
+      "img": "img/tech/tech-sass.png"
+    },
+    "bs": {
+      "name": "Bootstrap",
+      "img": "img/tech/tech-bootstrap.png"
+    },
+    "js": {
+      "name": "JavaScript",
+      "img": "img/tech/tech-javascript.png"
+    },
+    "jquery": {
+      "name": "jQuery",
+      "img": "img/tech/tech-jquery.png"
+    },
+    "angular": {
+      "name": "AngularJS",
+      "img": "img/tech/tech-angular.png"
+    },
+    "fb": {
+      "name": "Firebase",
+      "img": "img/tech/tech-firebase.png"
+    },
+    "gh": {
+      "name": "GitHub",
+      "img": "img/tech/tech-github.png"
+    },
+    "gulp": {
+      "name": "Gulp",
+      "img": "img/tech/tech-gulp.png"
+    },
+    "python": {
+      "name": "Python",
+      "img": "img/tech/tech-python.png"
+    },
+    "sql": {
+      "name": "SQL",
+      "img": "img/tech/tech-sql.png"
+    }
+  }
+}

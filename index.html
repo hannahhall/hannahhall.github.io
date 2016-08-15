@@ -18,32 +18,36 @@
 			<a href="#contact">Contact</a>
 		</div>
 	</section>
+	<div ng-app="app">
+		<section ng-controller="ProjectsCtrl as vm">
+			<div id="projects" class="projects">
+				<h1>Featured Projects</h1>
+				<div ng-repeat="project in vm.projects" class="{{project.class}}">
+					<a href="{{project.url}}"><h2>{{project.name}}<img src="img/glyphicons-51-link.png"></h2></a>
+					<img class="screenshot" ng-src="{{project.img}}">
+					<p>{{project.description}}</p>
+				</div>
 
-	<div id="projects" class="projects">
-		<h1>Featured Projects</h1>
-		<div class="project1">
-			<a href="http://hannahhall.github.io/checkers/#/"><h2>Checkers<img src="img/glyphicons-51-link.png"></h2></a>
-			<img class="ss"src="/img/Screen Shot 2016-07-06 at 2.12.41 PM.png">
-			<p>Checkers is an online game room for playing checkers. Players can also message their opponents during game play. Front end Capstone Project built with AngularJS and Firebase.</p>
-		</div>
+				<!-- <div class="project2">
+					<a href="http://hannahhall.github.io/gauntlet-food-fight/"><h2>Food Fight<img src="img/glyphicons-51-link.png"></h2></a>
+					<img class="screenshot"src="img/Screen Shot 2016-07-28 at 1.35.49 PM.png">
+					<p>Food vs. Chef, Food Fight is a text based game of chance. A group project built with jQuery.</p>
+				</div> -->
 
-		<div class="project2">
-			<a href="http://hannahhall.github.io/gauntlet-food-fight/"><h2>Food Fight<img src="img/glyphicons-51-link.png"></h2></a>
-			<img class="ss"src="img/Screen Shot 2016-07-28 at 1.35.49 PM.png">
-			<p>Food vs. Chef, Food Fight is a text based game of chance. A group project built with jQuery.</p>
-		</div>
-
-		<div class="tech">
-		</div>
+				<div class="tech">
+				</div>
+			</div>
+		</section>
 	</div>
 
 	<section class="about" id="about">
 		<h1>About</h1>
 		<div class="bio">
-			<p>I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized the music industry wasn't as fullfilling as I thought it would be. I needed something new. In my spare time I began using Codecademy to learn the basics of web development. Soon, I knew I needed some education beyond what Codecademy could provide. I joined Nashville Software School in April 2016. It has been an amazing learning experience. The learning will never end as I continue on my journey as a web developer.
+			<p>I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized there wasn't much setting me apart from the other music business graduates in town. I needed something new. In my spare time I began using Codecademy to learn the basics of web development. Soon, I knew I needed some education beyond what Codecademy could provide. I joined Nashville Software School in April 2016. It has been an amazing learning experience. The learning will never end as I continue on my journey as a web developer.
 	</section>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
-	<!-- <script type="text/javascript" src="jquery.sticky.js"></script>	 -->
-	<script type="text/javascript" src="portfolio.js"></script>
+	<script type="text/javascript" src="javascript/app.js"></script>
+	<script type="text/javascript" src="javascript/portfolio.js"></script>
 </body>
 </html>
