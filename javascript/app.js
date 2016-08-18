@@ -4,6 +4,6 @@ angular.module('app', [])
     $http.get('/javascript/projects.json').then(
       function success(res) {
         vm.projects = res.data.projects;
-        $log(vm.projects);
+        vm.techs = res.data.tech;
       })
   })
