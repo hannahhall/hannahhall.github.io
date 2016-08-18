@@ -23,18 +23,15 @@
 			<div id="projects" class="projects">
 				<h1>Featured Projects</h1>
 				<div ng-repeat="project in vm.projects" class="{{project.class}}">
-					<a href="{{project.url}}"><h2>{{project.name}}<img src="img/glyphicons-51-link.png"></h2></a>
+					<a href="{{project.url}}" target="_blank"><h2>{{project.name}}<img src="img/glyphicons-51-link.png"></h2></a>
 					<img class="screenshot" ng-src="{{project.img}}">
 					<p>{{project.description}}</p>
 				</div>
-
-				<!-- <div class="project2">
-					<a href="http://hannahhall.github.io/gauntlet-food-fight/"><h2>Food Fight<img src="img/glyphicons-51-link.png"></h2></a>
-					<img class="screenshot"src="img/Screen Shot 2016-07-28 at 1.35.49 PM.png">
-					<p>Food vs. Chef, Food Fight is a text based game of chance. A group project built with jQuery.</p>
-				</div> -->
-
-				<div class="tech">
+			</div>
+			<div class="techHolder">
+				<div class="tech" ng-repeat="tech in vm.techs">
+					<img class="techimg" ng-src="{{tech.img}}">
+					<p>{{tech.name}}
 				</div>
 			</div>
 		</section>
@@ -43,7 +40,9 @@
 	<section class="about" id="about">
 		<h1>About</h1>
 		<div class="bio">
-			<p>I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized there wasn't much setting me apart from the other music business graduates in town. I needed something new. In my spare time I began using Codecademy to learn the basics of web development. Soon, I knew I needed some education beyond what Codecademy could provide. I joined Nashville Software School in April 2016. It has been an amazing learning experience. The learning will never end as I continue on my journey as a web developer.
+			<p>
+				I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized that the music industry wasn't as fulfilling as I had hoped. In my spare time I began using Codecademy to learn the basics of web development. I realized that my passion was really in development. I knew I needed some education beyond what Codecademy could provide so I joined Nashville Software School in April 2016. It has been an amazing learning experience. The learning will never end as I continue on my journey as a web developer.
+			</p>
 	</section>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
