@@ -1,4 +1,4 @@
-angular.module('app', [])
+angular.module('app', ['ui.bootstrap'])
   .controller("ProjectsCtrl", function ($http) {
     var vm = this;
     $http.get('/javascript/projects.json').then(

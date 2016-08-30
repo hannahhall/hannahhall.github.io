@@ -2,7 +2,7 @@
 var navBarPosition = $('.navBar').offset().top;
 
 function stickyNavBar() {
-  var topScreen = $(window).scrollTop()
+  var topScreen = $(window).scrollTop();
   if (navBarPosition < topScreen) {
     $('.navBar').addClass('stick');
   } else {
@@ -12,4 +12,4 @@ function stickyNavBar() {
 
 $(window).scroll(function () {
   stickyNavBar();
-})
+});
