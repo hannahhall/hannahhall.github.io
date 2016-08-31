@@ -1,13 +1,15 @@
-@import 'https://fonts.googleapis.com/css?family=Lobster+Two:700i|Poiret+One';
+@import 'https://fonts.googleapis.com/css?family=Lobster|Poiret+One';
 body {
-  background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/IMG_5879.JPG") no-repeat center center fixed; }
+  background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/IMG_5879.JPG") no-repeat center center fixed;
+  background-size: cover; }
 
 a {
   text-decoration: none;
   color: #310a31; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #FFF; }
 
 hr {
   display: block;
@@ -21,7 +23,7 @@ hr {
   background-size: cover;
   height: 100vh;
   color: #310a31;
-  font-family: "Lobster Two", cursive;
+  font-family: "Lobster", cursive;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -57,8 +59,6 @@ hr {
     font-size: 2em;
     text-shadow: 1px 0 #310a31;
     letter-spacing: 0.5em; }
-  .navBar a:hover {
-    color: white; }
 
 .stick {
   margin-top: 0;
@@ -83,7 +83,7 @@ hr {
     align-self: center;
     text-align: center;
     width: 100%;
-    font-family: "Lobster Two", cursive;
+    font-family: "Lobster", cursive;
     text-shadow: 3px 3px rgba(49, 10, 49, 0.3); }
   .projects .project1,
   .projects .project2,
