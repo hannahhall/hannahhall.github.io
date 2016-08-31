@@ -1,0 +1,26 @@
+.contact {
+  padding-bottom: 10em;
+}
+.contactInfo {
+  margin: 3em;
+  padding: 0.5em;
+  font-family: $subHeadFont;
+  text-shadow: 0.5px 0.5px 0.5px $dark;
+  p {
+      display: block;
+      font-size: 1.25em;
+      letter-spacing: 0.1em;
+      text-align: justify;
+      font-family: $subHeadFont;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  img {
+    padding: 0.5em;
+  }
+}

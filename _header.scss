@@ -1,0 +1,55 @@
+.header {
+ background: linear-gradient(rgba(0,0,0,0) 40%, $lightblue), url('img/IMG_5879.JPG')no-repeat center center fixed;
+ background-size: cover;
+ height: 100vh;
+ color: $dark;
+ font-family: $headerFont;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: center;
+ box-shadow: 0 0 2em #537574;
+ h1 {
+   margin-top: 0;
+   text-align: center;
+   font-size: 3em;
+ }
+}
+
+.imgHolder {
+  background: white url('img/propic.jpg')no-repeat center center;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 10px solid $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
+.navBar {
+  width: 100%;
+  font-family: $subHeadFont;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+  margin-top: 5em;
+  a {
+    color: $dark;
+    text-decoration: none;
+    font-size: 2em;
+    text-shadow: 1px 0 $dark;
+    letter-spacing: 0.5em;
+  }
+}
+
+.stick {
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $lightblue;
+  box-shadow: 0 0 2em #537574;
+}

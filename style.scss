@@ -1,0 +1,39 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster|Poiret+One';
+
+$dark: #310a31;
+$dark_trans: rgba(49,10,49,0.3);
+$lightpurple: #847996;
+$lightblue: #88b7b5;
+$lightgreen: #a7cab1;
+$trans_white: rgba(244,236,214,0.7);
+$white-ish: #F4ECD6;
+$headerFont: 'Lobster', cursive;
+$subHeadFont: 'Poiret One', sans-serif;
+
+body {
+  background: linear-gradient($trans_white, $trans_white), url('img/IMG_5879.JPG') no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: $dark;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+hr {
+  display: block;
+  border-width: 1px;
+  border-color: $dark;
+  width: 80%;
+  margin-top: 4em;
+}
+
+@import "header";
+@import "projects";
+@import "about";
+@import "contact";
