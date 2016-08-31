@@ -4,7 +4,8 @@ body {
   background-size: cover; }
   @media screen and (max-device-width: 376px) {
     body {
-      background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/small_screen.jpeg") no-repeat center center fixed; } }
+      background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/small_screen.jpeg") no-repeat center center fixed;
+      background-size: cover; } }
 
 a {
   text-decoration: none;
@@ -35,7 +36,7 @@ hr {
   @media screen and (max-device-width: 376px) {
     .header {
       background: linear-gradient(transparent 40%, #88b7b5), url("img/small_screen.jpeg") no-repeat center center fixed;
-      justify-content: center; } }
+      background-size: cover; } }
   .header h1 {
     margin-top: 0;
     text-align: center;
@@ -60,9 +61,6 @@ hr {
   justify-content: space-around;
   padding: 1em;
   margin-top: 5em; }
-  @media screen and (max-device-width: 376px) {
-    .navBar {
-      margin-top: auto; } }
   .navBar a {
     font-size: 2em;
     text-shadow: 1px 0 #310a31;
@@ -135,6 +133,14 @@ hr {
       font-size: 1.25em;
       letter-spacing: 0.1em;
       text-align: justify; }
+      @media screen and (max-device-width: 650px) {
+        .projects .project1 p,
+        .projects .project2 p,
+        .about .project1 p,
+        .about .project2 p,
+        .contact .project1 p,
+        .contact .project2 p {
+          font-size: 2em; } }
     .projects .project1 .ss,
     .projects .project2 .ss,
     .about .project1 .ss,
@@ -205,6 +211,9 @@ hr {
     margin: 0;
     padding: 0.5em;
     text-align: justify; }
+    @media screen and (max-device-width: 650px) {
+      .bio p {
+        font-size: 2em; } }
 
 .contact {
   padding-bottom: 10em; }
@@ -220,6 +229,9 @@ hr {
     letter-spacing: 0.1em;
     text-align: justify;
     font-family: "Poiret One", sans-serif; }
+    @media screen and (max-device-width: 650px) {
+      .contactInfo p {
+        font-size: 2em; } }
 
 .links {
   display: flex;

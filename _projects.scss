@@ -44,6 +44,9 @@
         font-size: 1.25em;
         letter-spacing: 0.1em;
         text-align: justify;
+        @media screen and (max-device-width: 650px) {
+          font-size: 2em;
+        }
     }
     .ss {
       margin: 1em 0;

@@ -15,6 +15,7 @@ body {
   background-size: cover;
   @media screen and (max-device-width: 376px) {
     background: linear-gradient($trans_white, $trans_white), url('img/small_screen.jpeg') no-repeat center center fixed;
+    background-size: cover;
   }
 }
 

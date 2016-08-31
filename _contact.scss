@@ -12,6 +12,9 @@
       letter-spacing: 0.1em;
       text-align: justify;
       font-family: $subHeadFont;
+      @media screen and (max-device-width: 650px) {
+        font-size: 2em;
+      }
   }
 }
 
