@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-device-width: 768px) {
     flex-direction: column-reverse;
   }
 }
@@ -23,7 +23,7 @@
   font-family: $subHeadFont;
   text-shadow: 0.5px 0.5px 0.5px $dark;
   width: 60%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-device-width: 768px) {
     width: 75%;
   }
   p {

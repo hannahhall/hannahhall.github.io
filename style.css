@@ -2,7 +2,7 @@
 body {
   background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/IMG_5879.JPG") no-repeat center center fixed;
   background-size: cover; }
-  @media screen and (max-width: 376px) {
+  @media screen and (max-device-width: 376px) {
     body {
       background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/small_screen.jpeg") no-repeat center center fixed; } }
 
@@ -32,7 +32,7 @@ hr {
   justify-content: flex-end;
   align-items: center;
   box-shadow: 0 0 2em #537574; }
-  @media screen and (max-width: 376px) {
+  @media screen and (max-device-width: 376px) {
     .header {
       background: linear-gradient(transparent 40%, #88b7b5), url("img/small_screen.jpeg") no-repeat center center fixed;
       justify-content: center; } }
@@ -60,7 +60,7 @@ hr {
   justify-content: space-around;
   padding: 1em;
   margin-top: 5em; }
-  @media screen and (max-width: 376px) {
+  @media screen and (max-device-width: 376px) {
     .navBar {
       margin-top: auto; } }
   .navBar a {
@@ -85,6 +85,12 @@ hr {
   flex-wrap: wrap;
   justify-content: space-around;
   color: #310a31; }
+  @media screen and (max-device-width: 376px) {
+    .projects,
+    .about,
+    .contact {
+      flex-direction: column;
+      align-items: center; } }
   .projects h1,
   .about h1,
   .contact h1 {
@@ -172,7 +178,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-device-width: 768px) {
     .bioSection {
       flex-direction: column-reverse; } }
 
@@ -190,7 +196,7 @@ hr {
   font-family: "Poiret One", sans-serif;
   text-shadow: 0.5px 0.5px 0.5px #310a31;
   width: 60%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-device-width: 768px) {
     .bio {
       width: 75%; } }
   .bio p {
