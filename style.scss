@@ -13,6 +13,9 @@ $subHeadFont: 'Poiret One', sans-serif;
 body {
   background: linear-gradient($trans_white, $trans_white), url('img/IMG_5879.JPG') no-repeat center center fixed;
   background-size: cover;
+  @media screen and (max-width: 376px) {
+    background: linear-gradient($trans_white, $trans_white), url('img/small_screen.jpeg') no-repeat center center fixed;
+  }
 }
 
 a {

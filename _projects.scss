@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   color: $dark;
   h1 {
     align-self: center;
@@ -20,18 +20,20 @@
     background-color: $white-ish;
     box-shadow: 5px 5px 5px $dark_trans;
     border: 3px solid $dark;
-    margin: 4em;
+    margin: 4em 0;
     padding: 0.5em;
     font-family: $subHeadFont;
     text-shadow: 0.5px 0.5px 0.5px $dark;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
+    // align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
     max-width: 350px;
     letter-spacing: 0.5em;
     h2 {
-      margin: 0;
+      margin: 0.5em 0;
+      text-align: center;
     }
     p {
         // display: inline;
@@ -49,7 +51,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10em;
+  width: 75%;
+  margin: auto;
   flex-wrap: wrap;
 }
 

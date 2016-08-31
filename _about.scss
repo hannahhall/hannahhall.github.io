@@ -2,6 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .imgHolderJack {
@@ -20,6 +23,9 @@
   font-family: $subHeadFont;
   text-shadow: 0.5px 0.5px 0.5px $dark;
   width: 60%;
+  @media screen and (max-width: 768px) {
+    width: 75%;
+  }
   p {
     font-size: 1.25em;
     letter-spacing: 0.1em;

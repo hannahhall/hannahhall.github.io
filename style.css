@@ -2,6 +2,9 @@
 body {
   background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/IMG_5879.JPG") no-repeat center center fixed;
   background-size: cover; }
+  @media screen and (max-width: 376px) {
+    body {
+      background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/small_screen.jpeg") no-repeat center center fixed; } }
 
 a {
   text-decoration: none;
@@ -29,6 +32,10 @@ hr {
   justify-content: flex-end;
   align-items: center;
   box-shadow: 0 0 2em #537574; }
+  @media screen and (max-width: 376px) {
+    .header {
+      background: linear-gradient(transparent 40%, #88b7b5), url("img/small_screen.jpeg") no-repeat center center fixed;
+      justify-content: center; } }
   .header h1 {
     margin-top: 0;
     text-align: center;
@@ -53,9 +60,10 @@ hr {
   justify-content: space-around;
   padding: 1em;
   margin-top: 5em; }
+  @media screen and (max-width: 376px) {
+    .navBar {
+      margin-top: auto; } }
   .navBar a {
-    color: #310a31;
-    text-decoration: none;
     font-size: 2em;
     text-shadow: 1px 0 #310a31;
     letter-spacing: 0.5em; }
@@ -75,7 +83,7 @@ hr {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   color: #310a31; }
   .projects h1,
   .about h1,
@@ -94,14 +102,14 @@ hr {
     background-color: #F4ECD6;
     box-shadow: 5px 5px 5px rgba(49, 10, 49, 0.3);
     border: 3px solid #310a31;
-    margin: 4em;
+    margin: 4em 0;
     padding: 0.5em;
     font-family: "Poiret One", sans-serif;
     text-shadow: 0.5px 0.5px 0.5px #310a31;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
     max-width: 350px;
     letter-spacing: 0.5em; }
     .projects .project1 h2,
@@ -110,7 +118,8 @@ hr {
     .about .project2 h2,
     .contact .project1 h2,
     .contact .project2 h2 {
-      margin: 0; }
+      margin: 0.5em 0;
+      text-align: center; }
     .projects .project1 p,
     .projects .project2 p,
     .about .project1 p,
@@ -133,7 +142,8 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10em;
+  width: 75%;
+  margin: auto;
   flex-wrap: wrap; }
 
 .tech {
@@ -162,6 +172,9 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .bioSection {
+      flex-direction: column-reverse; } }
 
 .imgHolderJack {
   background: url("img/jack.jpg") no-repeat center center;
@@ -177,6 +190,9 @@ hr {
   font-family: "Poiret One", sans-serif;
   text-shadow: 0.5px 0.5px 0.5px #310a31;
   width: 60%; }
+  @media screen and (max-width: 768px) {
+    .bio {
+      width: 75%; } }
   .bio p {
     font-size: 1.25em;
     letter-spacing: 0.1em;
