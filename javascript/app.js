@@ -5,5 +5,5 @@ angular.module('app', ['ui.bootstrap'])
       function success(res) {
         vm.projects = res.data.projects;
         vm.techs = res.data.tech;
-      })
-  })
+      });
+  });
