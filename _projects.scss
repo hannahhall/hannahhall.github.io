@@ -18,6 +18,10 @@
     width: 100%;
     font-family: $headerFont;
     text-shadow: 3px 3px $dark_trans;
+    font-size: 2.5em;
+    @media screen and (max-device-width: 376px) {
+      font-size: 3em;
+    }
   }
   .project1,
   .project2 {
@@ -41,6 +45,9 @@
     h2 {
       margin: 0.5em 0;
       text-align: center;
+      @media screen and (max-device-width: 650px) {
+        font-size: 3em;
+      }
     }
     p {
         // display: inline;
@@ -48,7 +55,7 @@
         letter-spacing: 0.1em;
         text-align: justify;
         @media screen and (max-device-width: 650px) {
-          font-size: 2em;
+          font-size: 3em;
         }
     }
     img {
@@ -77,9 +84,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  p {
-    display:none;
-  }
 }
 
 .popover {
