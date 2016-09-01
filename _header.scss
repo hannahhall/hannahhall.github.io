@@ -47,6 +47,9 @@
     font-size: 2em;
     text-shadow: 1px 0 $dark;
     letter-spacing: 0.5em;
+    @media screen and (max-device-width: 450px) {
+      font-size: 3em;
+    }
   }
 }
 
