@@ -24,7 +24,7 @@
 				<h1>Featured Projects</h1>
 				<div ng-repeat="project in vm.projects" class="{{project.class}}">
 					<a href="{{project.url}}" target="_blank"><h2>{{project.name}}<img src="img/glyphicons-51-link.png"></h2></a>
-					<img class="screenshot" ng-src="{{project.img}}">
+					<img class="screenshot" class="img-responsive" ng-src="{{project.img}}">
 					<p>{{project.description}}</p>
 				</div>
 			</div>

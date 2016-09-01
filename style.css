@@ -148,14 +148,6 @@ hr {
         .contact .project1 p,
         .contact .project2 p {
           font-size: 2em; } }
-    .projects .project1 .ss,
-    .projects .project2 .ss,
-    .about .project1 .ss,
-    .about .project2 .ss,
-    .contact .project1 .ss,
-    .contact .project2 .ss {
-      margin: 1em 0;
-      border: 1px solid #310a31; }
 
 .techHolder {
   display: flex;
