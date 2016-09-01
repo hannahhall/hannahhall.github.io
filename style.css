@@ -169,7 +169,7 @@ hr {
         .contact .project1 p,
         .contact .project2 p {
           font-size: 3em;
-          overflow: auto; } }
+          margin-top: 125px; } }
     .projects .project1 .screenshot,
     .projects .project2 .screenshot,
     .about .project1 .screenshot,
