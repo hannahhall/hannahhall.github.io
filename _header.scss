@@ -9,9 +9,9 @@
  justify-content: flex-end;
  align-items: center;
  box-shadow: 0 0 2em #537574;
- @media screen and (max-device-width: 376px) {
-   background: linear-gradient(rgba(0,0,0,0) 40%, $lightblue), url('img/small_screen.jpeg') no-repeat center center fixed;
-   background-size: cover;
+ @media screen and (max-device-width: 450px) {
+   background: linear-gradient(rgba(0,0,0,0) 40%, $lightblue);
+   height: auto;
  }
  h1 {
    margin-top: 0;
@@ -40,7 +40,6 @@
   justify-content: space-around;
   padding: 1em;
   margin-top: 5em;
-
   a {
     font-size: 2em;
     text-shadow: 1px 0 $dark;

@@ -2,10 +2,9 @@
 body {
   background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/IMG_5879.JPG") no-repeat center center fixed;
   background-size: cover; }
-  @media screen and (max-device-width: 376px) {
+  @media screen and (max-device-width: 450px) {
     body {
-      background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)), url("img/small_screen.jpeg") no-repeat center center fixed;
-      background-size: cover; } }
+      background: linear-gradient(rgba(244, 236, 214, 0.7), rgba(244, 236, 214, 0.7)); } }
 
 a {
   text-decoration: none;
@@ -33,10 +32,10 @@ hr {
   justify-content: flex-end;
   align-items: center;
   box-shadow: 0 0 2em #537574; }
-  @media screen and (max-device-width: 376px) {
+  @media screen and (max-device-width: 450px) {
     .header {
-      background: linear-gradient(transparent 40%, #88b7b5), url("img/small_screen.jpeg") no-repeat center center fixed;
-      background-size: cover; } }
+      background: linear-gradient(transparent 40%, #88b7b5);
+      height: auto; } }
   .header h1 {
     margin-top: 0;
     text-align: center;
@@ -116,6 +115,14 @@ hr {
     flex-direction: column;
     max-width: 350px;
     letter-spacing: 0.5em; }
+    @media screen and (max-device-width: 450px) {
+      .projects .project1,
+      .projects .project2,
+      .about .project1,
+      .about .project2,
+      .contact .project1,
+      .contact .project2 {
+        max-width: 75%; } }
     .projects .project1 h2,
     .projects .project2 h2,
     .about .project1 h2,
