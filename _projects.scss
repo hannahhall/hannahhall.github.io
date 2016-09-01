@@ -54,12 +54,14 @@
         font-size: 1.25em;
         letter-spacing: 0.1em;
         text-align: justify;
+        margin: 1em 0;
         @media screen and (max-device-width: 650px) {
           font-size: 3em;
         }
     }
-    img {
+    .screenshot {
       margin: auto;
+      width: 100%;
     }
   }
 }

@@ -156,7 +156,8 @@ hr {
     .contact .project2 p {
       font-size: 1.25em;
       letter-spacing: 0.1em;
-      text-align: justify; }
+      text-align: justify;
+      margin: 1em 0; }
       @media screen and (max-device-width: 650px) {
         .projects .project1 p,
         .projects .project2 p,
@@ -165,13 +166,14 @@ hr {
         .contact .project1 p,
         .contact .project2 p {
           font-size: 3em; } }
-    .projects .project1 img,
-    .projects .project2 img,
-    .about .project1 img,
-    .about .project2 img,
-    .contact .project1 img,
-    .contact .project2 img {
-      margin: auto; }
+    .projects .project1 .screenshot,
+    .projects .project2 .screenshot,
+    .about .project1 .screenshot,
+    .about .project2 .screenshot,
+    .contact .project1 .screenshot,
+    .contact .project2 .screenshot {
+      margin: auto;
+      width: 100%; }
 
 .techHolder {
   display: flex;
