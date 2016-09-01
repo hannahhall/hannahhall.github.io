@@ -34,7 +34,7 @@ hr {
   box-shadow: 0 0 2em #537574; }
   @media screen and (max-device-width: 450px) {
     .header {
-      background: linear-gradient(transparent 40%, #88b7b5);
+      background: linear-gradient(#F4ECD6 40%, #88b7b5);
       height: auto; } }
   .header h1 {
     margin-top: 0;
@@ -148,6 +148,13 @@ hr {
         .contact .project1 p,
         .contact .project2 p {
           font-size: 2em; } }
+    .projects .project1 img,
+    .projects .project2 img,
+    .about .project1 img,
+    .about .project2 img,
+    .contact .project1 img,
+    .contact .project2 img {
+      margin: auto; }
 
 .techHolder {
   display: flex;

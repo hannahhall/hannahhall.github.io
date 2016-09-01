@@ -10,7 +10,7 @@
  align-items: center;
  box-shadow: 0 0 2em #537574;
  @media screen and (max-device-width: 450px) {
-   background: linear-gradient(rgba(0,0,0,0) 40%, $lightblue);
+   background: linear-gradient($white-ish 40%, $lightblue);
    height: auto;
  }
  h1 {
