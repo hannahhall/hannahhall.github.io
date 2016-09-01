@@ -4,14 +4,14 @@
       "class": "project1",
       "name": "Checkers",
       "img": "img/checkersScreen.png",
-      "description": "Checkers is an online game room for playing checkers. Players can also message their opponents during game play. Front end Capstone Project built with AngularJS and Firebase.",
+      "description": "Checkers is an online game room for playing checkers. Players can also message their opponents during game play. Core logic for the game written in JavaScript using AngularJS. Uses Firebase for user auth and data storage and Gulp to automate SASS compiling and JSHint.",
       "url": "http://hannahhall.github.io/checkers/#/"
     },
     "foodFight": {
       "class": "project2",
       "name": "Food Fight",
       "img": "img/foodFightScreen.png",
-      "description": "Food vs. Chef, Food Fight is a text based game of chance. A group project built with jQuery.",
+      "description": "Food Fight is a text based game of chance. A group project built to test jQuery comprehension and inheritance in JavaScript. Responsibilities included part of the jQuery and all of the design. Utilized bootstrap to enhance the styling.",
       "url": "http://hannahhall.github.io/gauntlet-food-fight/"
     }
   },
