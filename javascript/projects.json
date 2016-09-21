@@ -9,10 +9,10 @@
     },
     "foodFight": {
       "class": "project2",
-      "name": "Food Fight",
-      "img": "img/foodFightScreen.png",
-      "description": "Food Fight is a text based game of chance. A group project built to test jQuery comprehension and inheritance in JavaScript. Responsibilities included part of the jQuery and all of the design. Utilized bootstrap to enhance the styling.",
-      "url": "http://hannahhall.github.io/gauntlet-food-fight/"
+      "name": "Accio",
+      "img": "img/screen_shot_profile.png",
+      "description": "Accio is a music recognition app using ACRCloud's music fingerprinting software. The browser records five seconds of audio using getUserMedia(). The audio blob is sent to the server, analyzed by ACRC, then saved to the database. Python and Django server with AngularJS and SASS front end. CSS animations used to enhance design.",
+      "url": "https://github.com/hannahhall/accio"
     }
   },
   "tech": {
