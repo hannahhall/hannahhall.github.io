@@ -11,11 +11,8 @@ $headerFont: 'Lobster', cursive;
 $subHeadFont: 'Poiret One', sans-serif;
 
 body {
-  background: linear-gradient($trans_white, $trans_white), url('img/IMG_5879.JPG') no-repeat center center fixed;
-  background-size: cover;
-  @media screen and (max-device-width: 450px) {
-    background: linear-gradient($trans_white, $trans_white);
-  }
+  color: $trans_white;
+  position: relative;
 }
 
 a {
@@ -25,7 +22,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #FFF;
+  // color: #FFF;
 }
 
 hr {
@@ -33,10 +30,25 @@ hr {
   border-width: 1px;
   border-color: $dark;
   width: 80%;
-  margin-top: 4em;
+  margin: 2rem auto;
+}
+
+.img-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+.brand {
+  font-family: $headerFont;
+}
+
+.splash {
+  padding-top: 3.5em;
+  margin: 0;
 }
 
 @import "header";
 @import "projects";
-@import "about";
 @import "contact";

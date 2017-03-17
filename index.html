@@ -4,71 +4,123 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Hannah Hall | Software Developer</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<section class="header">
-		<div class="imgHolder">
+<body data-spy="scroll" data-target="#navbar">
+	<nav id="navbar" class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+		<button
+			class="navbar-toggler navbar-toggler-right"
+			type="button"
+			data-toggle="collapse"
+			data-target="#navbarCollapse"
+			aria-controls="navbarCollapse"
+			aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand brand" href="#">Hannah Hall</a>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#projects">Projects
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
 		</div>
-		<h1>Hannah Hall</h1>
-		<div class="navBar">
-			<a href="#projects">Projects</a>
-			<a href="#about">About</a>
-			<a href="#contact">Contact</a>
-		</div>
-	</section>
-	<div ng-app="app">
+	</nav>
+
+	<div class="splash">
+    <img class="img-fluid" src="img/IMG_2646.jpg">
+  </div>
+
+	<div ng-app="app" class="container">
 		<section ng-controller="ProjectsCtrl as vm">
 			<div id="projects" class="projects">
 				<h1>Featured Projects</h1>
-				<div ng-repeat="project in vm.projects" class="{{project.class}}">
-					<a href="{{project.url}}" target="_blank"><h2>{{project.name}}<img src="img/glyphicons-51-link.png"></h2></a>
-					<div><img class="img-responsive screenshot" ng-src="{{project.img}}"></div>
-					<p>{{project.description}}</p>
+				<div class="card-deck">
+					<div class="card" ng-repeat="project in vm.projects">
+						<div class="img-holder">
+							<img class="card-img-top" ng-src="{{project.img}}" height="175">
+						</div>
+						<div class="card-block">
+							<h2 class="card-title">{{project.name}}</h2>
+							<p class="card-text text-muted">{{project.description}}</p>
+						</div>
+						<div class="card-footer"><a class="btn btn-secondary bottom" href="{{project.url}}" role="button">View More &raquo;</a></div>
+					</div> <!-- end repeat -->
 				</div>
-			</div>
+			</div> <!-- end projects -->
+			<hr>
 			<div class="techHolder">
 				<div class="tech" ng-repeat="tech in vm.techs" uib-popover="{{tech.name}}" popover-trigger="'mouseenter'">
 					<img class="techimg" ng-src="{{tech.img}}">
 				</div>
 			</div>
-		</section>
-	</div>
-	<hr>
-	<section class="about" id="about">
-		<h1>About</h1>
-		<div class="bioSection">
-			<div class="imgHolderJack">
-			</div>
-			<div class="bio">
-				<p>
-					I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized that the music industry wasn't as fulfilling as I had hoped. In my spare time I began using Codecademy to learn the basics of web development. I realized that my passion was really in development. I knew I needed some education beyond what Codecademy could provide so I joined Nashville Software School in April 2016. It has been an amazing learning experience. The learning will never end as I continue on my journey as a web developer.
-				</p>
-				<p>
-					My dog, however, is not happy with my choosen career path. Or really any career that involves leaving the house without him.
-				</p>
-			</div>
-		</div>
-	</section>
-	<hr>
+		</section> <!-- end controller -->
 
-	<section id="contact" class="contact">
-		<h1>Contact</h1>
+		<hr>
+
+		<section class="about" id="about">
+			<div class="row featurette">
+				<div class="col-md-5 img-holder">
+					<img class="featurette-image img-fluid mx-auto" src="img/jack.jpg">
+				</div>
+	      <div class="col-md-7">
+	        <h2 class="featurette-heading">About</h2>
+	        <p class="text-muted lead">
+						I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized that the music industry wasn't as fulfilling as I had hoped. In my spare time I began using Codecademy to learn the basics of web development. I realized that my passion was really in development. I knew I needed some education beyond what Codecademy could provide so I joined Nashville Software School in April 2016. It has been an amazing learning experience. The learning will never end as I continue on my journey as a web developer. I'm currently a teaching assistant at Nashville Software School.
+					</p>
+					<p class="text-muted lead">
+						My dog, however, is still not happy with my choosen career path. Or really any career that involves leaving the house without him.
+					</p>
+	      </div>
+	    </div>
+		</section> <!-- end about -->
+
+		<hr>
+
+		<section id="contact" class="contact col-xs-6 col-offset-xs-6">
+			<h1>Contact</h1>
 			<div class="contactInfo">
 				<p>If you'd like to talk about code, dogs, or music find me here:</p>
 				<div class="links">
-					<p><img src="img/email.png" alt="email" /><a href="mailto:hannahkhall13+ws@gmail.com" target="_top">Email</a></p>
-					<p><img src="img/github.png" alt="GitHub" /><a href="https://github.com/hannahhall">GitHub</a></p>
-					<p><img src="img/Ln.png" alt="" /><a href="https://www.linkedin.com/in/hannah-hall-125887125">LinkedIn</a></p>
+					<p>
+						<img src="img/email.png" alt="email" />
+						<a href="mailto:hannahkhall13+ws@gmail.com" target="_top">
+							Email
+						</a>
+					</p>
+					<p>
+						<img src="img/github.png" alt="GitHub" />
+						<a href="https://github.com/hannahhall">GitHub</a>
+					</p>
+					<p>
+						<img src="img/Ln.png" alt=""/>
+						<a href="https://www.linkedin.com/in/hannah-hall-125887125">
+							LinkedIn
+						</a>
+					</p>
 				</div>
 			</div>
-	</section>
+			<footer class="footer">
+				<p>&copy; 2017 Hannah Hall &middot; </p>
+				<p class="right"><a href="#">Back to top</a></p>
+			</footer>
+		</section> 	<!-- end contact -->
+	</div> 	<!-- end container -->
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.2/ui-bootstrap-tpls.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="javascript/app.js"></script>
-	<script type="text/javascript" src="javascript/portfolio.js"></script>
 </body>
 </html>
