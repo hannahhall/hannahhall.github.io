@@ -1,24 +1,18 @@
 @import 'https://fonts.googleapis.com/css?family=Lobster|Poiret+One';
 
-$dark: #310a31;
-$dark_trans: rgba(49,10,49,0.3);
-$lightpurple: #847996;
-$lightblue: #88b7b5;
-$lightgreen: #a7cab1;
-$trans_white: rgba(244,236,214,0.7);
-$white-ish: #F4ECD6;
+$dark: #2b1e1c;
+$grey: #5a5a4e;
+$blue: #e7eceb;
+$orange: #b0532f;
+$purple: #413f5d;
 $headerFont: 'Lobster', cursive;
-$subHeadFont: 'Poiret One', sans-serif;
 
 body {
-  color: $trans_white;
+  color: #FFFAFA;
   position: relative;
 }
 
-a {
-  text-decoration: none;
-  color: $dark;
-}
+
 
 a:hover {
   text-decoration: none;
@@ -28,7 +22,7 @@ a:hover {
 hr {
   display: block;
   border-width: 1px;
-  border-color: $dark;
+  border-color: $orange;
   width: 80%;
   margin: 2rem auto;
 }
@@ -40,9 +34,7 @@ hr {
   margin-top: 0.5em;
 }
 
-.brand {
-  font-family: $headerFont;
-}
+
 
 .splash {
   padding-top: 3.5em;

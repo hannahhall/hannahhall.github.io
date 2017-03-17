@@ -1,5 +1,11 @@
 .contact {
   height: 100vh;
+  a {
+    color: $dark;
+  }
+  a:hover {
+    color: $grey;
+  }
 }
 
 .contactInfo {
