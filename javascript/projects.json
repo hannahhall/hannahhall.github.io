@@ -3,16 +3,23 @@
     "checkers": {
       "class": "project1",
       "name": "Checkers",
-      "img": "img/checkersScreen.png",
+      "img": "img/checkers.png",
       "description": "Checkers is an online game room for playing checkers. Players can also message their opponents during game play. Core logic for the game written in JavaScript using AngularJS. Uses Firebase for user auth and data storage and Gulp to automate SASS compiling and JSHint.",
       "url": "http://hannahhall.github.io/checkers/#/"
     },
-    "foodFight": {
+    "accio": {
       "class": "project2",
       "name": "Accio",
-      "img": "img/screen_shot_profile.png",
-      "description": "Accio is a music recognition app using ACRCloud's music fingerprinting software. The browser records five seconds of audio using getUserMedia(). The audio blob is sent to the server, analyzed by ACRC, then saved to the database. Python and Django server with AngularJS and SASS front end. CSS animations used to enhance design.",
+      "img": "img/accio.png",
+      "description": "Accio is a music recognition app using ACRCloud's music fingerprinting software. The browser records five seconds of audio. The audio blob is sent to the server, analyzed by ACRC, then saved to the database. Python and Django server with AngularJS and Sass front end. CSS animations used to enhance design.",
       "url": "https://github.com/hannahhall/accio"
+    },
+    "worldMap": {
+      "class": "project3",
+      "name": "World Map Quiz",
+      "img": "img/stats.png",
+      "description": "Choose a continent to test where each country is. The app collects stats on the answers and breaks them up into percentage, progress over time, and average number of tries. Uses C#, .Net Core, and Chart.js to gather, store, and display data.",
+      "url": "https://github.com/hannahhall/world-map"
     }
   },
   "tech": {
@@ -63,6 +70,10 @@
     "sql": {
       "name": "SQL",
       "img": "img/tech/tech-sql.png"
+    },
+    "cs": {
+      "name": "C#",
+      "img": "img/tech/tech-cs.png"
     }
   }
 }
