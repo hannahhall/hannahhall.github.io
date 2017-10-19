@@ -2,60 +2,87 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 	<title>Hannah Hall | Software Developer</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" >
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body data-spy="scroll" data-target="#navbar">
-	<nav id="navbar" class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-		<button
-			class="navbar-toggler navbar-toggler-right"
-			type="button"
-			data-toggle="collapse"
-			data-target="#navbarCollapse"
-			aria-controls="navbarCollapse"
-			aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<a class="navbar-brand brand" href="#">Hannah Hall</a>
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#projects">Projects
-						<span class="sr-only">(current)</span>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#about">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-			</ul>
+<body>
+	<div class="hero is-primary is-medium is-bold">
+		<div class="hero-head">
+			<nav class="navbar">
+				<div class="container">
+					<div class="navbar-brand">
+						<span class="navbar-burger burger" data-target="navbarMenuHeroA">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</div>
+					<div id="navbarMenuHeroA" class="navbar-menu">
+						<div class="navbar-end">
+							<a class="navbar-item has-text-weight-semibold" href="#projects">
+								Projects
+							</a>
+							<a class="navbar-item has-text-weight-semibold" href="#about">
+								About
+							</a>
+							<a class="navbar-item has-text-weight-semibold" href="#contact">
+								Contact
+							</a>
+							
+						</div>
+					</div>
+				</div>
+			</nav>
 		</div>
-	</nav>
-
-	<div class="splash">
-    <img class="img-fluid" src="img/IMG_2646.JPG">
-  </div>
+		<div class="hero-body">
+			<div class="container tile is-parent">
+				<div class="tile is-child has-text-centered-mobile">
+					<h1 class="title is-size-1-mobile">
+						Hannah Hall
+					</h1>
+					<h2 class="subtitle is-size-2-mobile">
+						Web Developer
+					</h2>
+				</div>
+				
+				<div class="carousel tile is-child is-8 is-hidden-mobile" data-flickity='{ "autoPlay": true, "imagesLoaded": true, "percentPosition": false}'>
+					<img src="img/site_gif.gif" alt="">
+					<img src="img/checkers.gif" alt="" style="max-height:240px;">
+					<img src="img/world_map_giphy.gif" style="max-height:240px;" alt="">
+				</div>
+			</div>
+		</div>	
+	</div>
 
 	<div ng-app="app" class="container">
-		<section ng-controller="ProjectsCtrl as vm">
-			<div id="projects" class="projects">
-				<h1>Featured Projects</h1>
-				<div class="card-deck">
-					<div class="card" ng-repeat="project in vm.projects">
-						<div class="img-holder">
-							<img class="card-img-top" ng-src="{{project.img}}" height="175">
-						</div>
-						<div class="card-block">
-							<h2 class="card-title">{{project.name}}</h2>
-							<p class="card-text text-muted">{{project.description}}</p>
-						</div>
-						<div class="card-footer"><a class="btn btn-secondary bottom" href="{{project.url}}" role="button">View More &raquo;</a></div>
-					</div> <!-- end repeat -->
+		<div ng-controller="ProjectsCtrl as vm">
+			<div id="projects" class="projects section">
+				<h1 class="title is-size-1-touch">Featured Projects</h1>
+					<div class="columns is-desktop">
+						<div class="column card is-paddingless" ng-repeat="project in vm.projects">
+							<div class="card-image">
+								<figure class="image">
+									<img ng-src="{{project.img}}" alt="Checkers">
+								</figure>
+							</div>
+							<header class="card-header">
+								<h3 class="card-header-title is-centered title is-size-2-touch">
+									{{project.name}}
+								</h3>
+							</header>
+							<div class="card-content">
+								<div class="content is-size-3-touch has-text-grey-dark">
+									{{project.description}}
+									<br>
+								</div>
+							</div>
+							<footer class="card-footer">
+								<a href="{{project.url}}" class="card-footer-item has-text-success has-text-weight-semibold is-size-3-touch">View More</a>
+							</footer>
+						</div><!-- end repeat -->
 				</div>
 			</div> <!-- end projects -->
 			<hr>
@@ -64,65 +91,73 @@
 					<img class="techimg" ng-src="{{tech.img}}">
 				</div>
 			</div>
-		</section> <!-- end controller -->
+		</div> <!-- end controller -->
 
 		<hr>
 
-		<section class="about" id="about">
-			<div class="row featurette">
-				<div class="col-md-5 img-holder">
-					<img class="featurette-image img-fluid mx-auto" src="img/jack.jpg">
+		<div class="about section" id="about">
+			<h1 class="title is-size-1-touch">About</h1>
+			<div class="columns is-desktop">
+				<div class="img-holder column">
+					<img class="img-fluid" src="img/jack.jpg">
 				</div>
-	      <div class="col-md-7">
-	        <h2 class="featurette-heading">About</h2>
-	        <p class="text-muted lead">
+	      		<div class="column">
+					<p class="is-size-3-touch has-text-grey-dark">
 						I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized that the music industry wasn't as fulfilling as I had hoped. In my spare time I began using Codecademy to learn the basics of web development. I realized that my passion was really in development. I knew I needed some education beyond what Codecademy could provide so I joined Nashville Software School in April 2016. It has been an amazing learning experience. The learning will never end as I continue on my journey as a web developer. I'm currently a teaching assistant at Nashville Software School.
 					</p>
-					<p class="text-muted lead">
+					<p class="is-size-3-touch has-text-grey-dark">
 						My dog, however, is still not happy with my choosen career path. Or really any career that involves leaving the house without him.
 					</p>
-	      </div>
-	    </div>
-		</section> <!-- end about -->
+				</div>
+			</div>
+		</div> <!-- end about -->
 
 		<hr>
 
-		<section id="contact" class="contact col-xs-12">
-			<h1>Contact</h1>
-			<div class="contactInfo">
+		<div id="contact" class="contact section">
+			<h1 class="title is-size-1-touch">Contact</h1>
+			<div class="contactInfo is-size-3-touch has-text-grey-dark">
 				<p>If you'd like to talk about code, dogs, or music find me here:</p>
 				<div class="links">
 					<p>
-						<a href="mailto:hannahkhall13+ws@gmail.com" target="_top">
-							<img src="img/email.png" alt="email" />
+						<a href="mailto:hannahkhall13+ws@gmail.com" target="_top" class="has-text-grey-dark">
+							<span class="icon is-medium is-hidden-touch"><img src="img/email.png" alt="email" /></span>
 							Email
 						</a>
 					</p>
 					<p>
-						<a href="https://github.com/hannahhall">
-							<img src="img/github.png" alt="GitHub" />
+						<a href="https://github.com/hannahhall" class="has-text-grey-dark">
+							<span class="icon is-medium is-hidden-touch"><img src="img/github.png" alt="GitHub" /></span>
 							GitHub
 						</a>
 					</p>
 					<p>
-						<a href="https://www.linkedin.com/in/hannah-hall-125887125">
-							<img src="img/Ln.png" alt=""/>
+						<a href="https://www.linkedin.com/in/hannah-hall-125887125" class="has-text-grey-dark">
+							<span class="icon is-medium is-hidden-touch"><img src="img/Ln.png" alt=""/></span>
 							LinkedIn
 						</a>
 					</p>
 				</div>
 			</div>
-			<footer class="footer">
-				<p>&copy; 2017 Hannah Hall &middot; </p>
-				<p class="right"><a href="#">Back to top</a></p>
+			<footer class="footer is-paddingless">
+				<div class="container">
+					<div class="content is-size-3-touch">
+							<p class="has-text-grey-dark">&copy; 2017 Hannah Hall &middot; </p>
+							<p class="right">
+								<a href="#" class="has-text-grey-dark">Back to top</a>
+							</p>	
+					</div>
+				</div>
 			</footer>
-		</section> 	<!-- end contact -->
+				
+		
+		</div> 	<!-- end contact -->
 	</div> 	<!-- end container -->
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="javascript/bulma.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script type="text/javascript" src="javascript/app.js"></script>
 </body>
 </html>
