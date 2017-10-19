@@ -1,15 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Lobster|Poiret+One';
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text|Play');
 
-$dark: #2b1e1c;
-$grey: #5a5a4e;
-$blue: #e7eceb;
-$orange: #b0532f;
-$purple: #413f5d;
-$headerFont: 'Lobster', cursive;
+$headerFont: 'Noticia Text', serif;
+
 
 body {
   color: #FFFAFA;
   position: relative;
+  @media touch {
+    max-width: 100vw;
+  }
 }
 
 
@@ -20,9 +20,7 @@ a:hover {
 }
 
 hr {
-  display: block;
-  border-width: 1px;
-  border-color: $orange;
+  background-color: hsl(141, 71%, 48%);
   width: 80%;
   margin: 2rem auto;
 }
@@ -36,11 +34,6 @@ hr {
 
 
 
-.splash {
-  padding-top: 3.5em;
-  margin: 0;
-  background-color: $dark; 
-}
 
 @import "header";
 @import "projects";

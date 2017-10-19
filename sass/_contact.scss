@@ -1,0 +1,40 @@
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactInfo {
+  padding: 0.5em;
+  p {
+      display: block;
+      letter-spacing: 0.1em;
+      text-align: center;
+  }
+}
+
+.links img {
+  padding: 0.5em;
+}
+
+.footer {
+  align-items: flex-end;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  .content{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2em;
+    @media (max-width: 1025px) {
+      padding-bottom: 0;
+    }
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
