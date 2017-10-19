@@ -101,11 +101,14 @@ hr {
       margin: 1em; } }
 
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  @media (max-width: 768px) {
+    .contact {
+      justify-content: flex-start; } }
 
 .contactInfo {
   padding: 0.5em; }
@@ -130,7 +133,9 @@ hr {
     @media (max-width: 1025px) {
       .footer .content {
         padding-bottom: 0; } }
-    @media (max-width: 575px) {
+    @media (max-width: 768px) {
       .footer .content {
         flex-direction: column;
-        align-items: center; } }
+        align-items: center; }
+        .footer .content p {
+          margin: 0 0 1em 0 !important; } }
