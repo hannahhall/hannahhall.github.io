@@ -1,39 +1,33 @@
+@import '../node_modules/bulma/bulma.sass';
+@import '../node_modules/bulma-extensions/bulma-tooltip/tooltip.sass';
 @import 'https://fonts.googleapis.com/css?family=Lobster|Poiret+One';
 @import url('https://fonts.googleapis.com/css?family=Noticia+Text|Play');
-
-$headerFont: 'Noticia Text', serif;
-
-
+$headerFont: 'Noticia Text',
+serif;
 body {
-  color: #FFFAFA;
-  position: relative;
-  @media touch {
-    max-width: 100vw;
-  }
+    color: #FFFAFA;
+    position: relative;
+    @media touch {
+        max-width: 100vw;
+    }
 }
 
-
-
 a:hover {
-  text-decoration: none;
-  // color: #FFF;
+    text-decoration: none; // color: #FFF;
 }
 
 hr {
-  background-color: hsl(141, 71%, 48%);
-  width: 80%;
-  margin: 2rem auto;
+    background-color: hsl(141, 71%, 48%);
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .img-holder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5em;
 }
-
-
-
 
 @import "header";
 @import "projects";

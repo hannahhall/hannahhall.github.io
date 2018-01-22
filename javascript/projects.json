@@ -4,8 +4,8 @@
       "class": "project1",
       "name": "Checkers",
       "img": "img/checkers.png",
-      "description": "Checkers is an online game room for playing checkers. Players can also message their opponents during game play. Core logic for the game written in JavaScript using AngularJS. Uses Firebase for user auth and data storage and Gulp to automate SASS compiling and JSHint.",
-      "url": "http://hannahhall.github.io/checkers/#/"
+      "description": "This is an Angular 5 refactor of <a href='https://github.com/hannahhall/checkersjs'>CheckersJS</a>, a checkers game room with messaging. Written using Angular 5, AngularFire, and Firebase. The original used sass and gulp to automate tasks",
+      "url": "https://checkers-nss.herokuapp.com/"
     },
     "accio": {
       "class": "project2",
@@ -37,15 +37,19 @@
     },
     "js": {
       "name": "JavaScript",
-      "img": "img/tech/tech-javascript.png"
+      "img": "img/tech/tech-javascript.svg"
     },
     "jquery": {
       "name": "jQuery",
       "img": "img/tech/tech-jquery.png"
     },
-    "angular": {
+    "angularjs": {
       "name": "AngularJS",
-      "img": "img/tech/tech-angular.png"
+      "img": "img/tech/tech-angular.ico"
+    },
+    "angular": {
+        "name": "Angular",
+        "img": "img/tech/tech-angular.png"
     },
     "fb": {
       "name": "Firebase",
@@ -61,19 +65,31 @@
     },
     "python": {
       "name": "Python",
-      "img": "img/tech/tech-python.png"
+      "img": "img/tech/tech-python.ico"
     },
     "dj": {
       "name": "Django",
-      "img": "img/tech/tech-django.jpg"
-    },
-    "sql": {
-      "name": "SQL",
-      "img": "img/tech/tech-sql.png"
+      "img": "img/tech/tech-django.png"
     },
     "cs": {
       "name": "C#",
       "img": "img/tech/tech-cs.png"
+    },
+    "net": {
+        "name": ".Net Core",
+        "img": "img/tech/net-core.png"
+    },
+    "ruby": {
+        "name": "Ruby",
+        "img": "img/tech/ruby.png"
+    },
+    "rails": {
+        "name": "Rails",
+        "img": "img/tech/rails.org"
+    },
+    "heroku": {
+        "name": "Heroku",
+        "img": "img/tech/tech-heroku.png"
     }
   }
 }
