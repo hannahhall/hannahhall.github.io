@@ -4,7 +4,7 @@
       "class": "project1",
       "name": "Checkers",
       "img": "img/checkers.png",
-      "description": "This is an Angular 5 refactor of <a href='https://github.com/hannahhall/checkersjs'>CheckersJS</a>, a checkers game room with messaging. Written using Angular 5, AngularFire, and Firebase. The original used sass and gulp to automate tasks",
+      "description": "This is an Angular 5 refactor of <a href='https://github.com/hannahhall/checkersjs'>CheckersJS</a>, a checkers game room with messaging. Written using Angular 5, AngularFire, and Firebase and hosted with Heroku. The original used AngularJS, Firebase, Sass and Gulp.",
       "url": "https://checkers-nss.herokuapp.com/"
     },
     "accio": {
