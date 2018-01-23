@@ -16,11 +16,10 @@ angular.module('app', [])
     function is_touch_device() {
         return 'ontouchstart' in window;
     }
-    let scroll = is_touch_device() ? 255 : 674
+    let scroll = is_touch_device() ? 255 : 674;
 
     $(window).scroll(function () {
 
-        console.log($(window).scrollTop());
         
         if ($(window).scrollTop() > scroll) {
             $('.navbar').addClass('fixed is-primary is-bold');

@@ -6747,7 +6747,7 @@ hr {
 .carousel img {
   margin-right: 10px; }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero {
     min-height: 100vh; } }
 
@@ -6850,8 +6850,6 @@ hr {
       .footer .content {
         padding-bottom: 0; } }
     @media (max-width: 768px) {
-      .footer .content {
-        flex-direction: column;
-        align-items: center; }
-        .footer .content p {
-          margin: 0 0 1em 0 !important; } }
+      .footer .content p {
+        margin: 0 0 1em 0 !important;
+        font-size: 0.6em; } }
