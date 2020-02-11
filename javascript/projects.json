@@ -1,21 +1,30 @@
 {
   "projects": {
+    "cordially": {
+      "name": "Cordially Stop Cancer",
+      "img": "img/cordially.png",
+      "description": "Cordially Stop Cancer was a project I worked on for Colon Cancer Awareness Month. It was build with Craft CMS and VueJS.",
+      "url": "https://cordiallystopcancer.com/"
+    },
+    "romair": {
+      "name": "Romair",
+      "img": "img/romair.png",
+      "description": "Romair was a project for a construction company in Florida. It was build with Craft CMS.",
+      "url": "https://cordiallystopcancer.com/"
+    },
     "checkers": {
-      "class": "project1",
       "name": "Checkers",
       "img": "img/checkers.png",
-      "description": "This is an Angular 5 refactor of <a href='https://github.com/hannahhall/checkersjs'>CheckersJS</a>, a checkers game room with messaging. Written using Angular 5, AngularFire, and Firebase and hosted with Heroku. The original used AngularJS, Firebase, Sass and Gulp.",
+      "description": "This is an Angular 5 refactor of my Nashville Software School front-end capstone, a checkers game room with messaging. Written using Angular 5, AngularFire, and Firebase and hosted with Heroku. The original used AngularJS, Firebase, Sass and Gulp.",
       "url": "https://checkers-nss.herokuapp.com/"
     },
     "accio": {
-      "class": "project2",
       "name": "Accio",
       "img": "img/accio.png",
       "description": "Accio is a music recognition app using ACRCloud's music fingerprinting software. The browser records five seconds of audio. The audio blob is sent to the server, analyzed by ACRC, then saved to the database. Python and Django server with AngularJS and Sass front end. CSS animations used to enhance design.",
       "url": "https://github.com/hannahhall/accio"
     },
     "worldMap": {
-      "class": "project3",
       "name": "World Map Quiz",
       "img": "img/stats.png",
       "description": "Choose a continent to test where each country is. The app collects stats on the answers and breaks them up into percentage, progress over time, and average number of tries. Uses C#, .Net Core, and Chart.js to gather, store, and display data.",

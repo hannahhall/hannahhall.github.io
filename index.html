@@ -54,8 +54,8 @@
     <div class="container is-fluid">
         <div id="projects" class="projects">
             <h1 class="title is-size-2-touch">Featured Projects</h1>
-            <div class="columns is-multiline is-mobile">
-                <div class="column is-one-third-desktop is-half-tablet is-full-mobile" ng-repeat="project in vm.projects">
+            <div class="columns is-multiline">
+                <div class="column is-one-third-desktop is-half-tablet" ng-repeat="project in vm.projects">
                     <div class="card is-paddingless">
                         <div class="card-image">
                             <figure class="image">
@@ -68,7 +68,7 @@
                             </h3>
                         </header>
                         <div class="card-content">
-                            <div class="content is-size-4-touch has-text-grey-dark has-text-justified">
+                            <div class="content is-size-5-touch has-text-grey-dark">
                                 {{project.description}}
                             </div>
                         </div>
@@ -89,28 +89,28 @@
         </div>
         <!-- end controller -->
 
-        <hr>
-
-        <div class="about section container" id="about">
+        
+        <div class="about section" id="about">
+            <hr>
             <h1 class="title is-size-2-touch">About</h1>
-            <div class="columns is-desktop">
+            <div class="columns is-desktop container">
                 <div class="img-holder column">
                     <img class="img-fluid" src="img/jack.jpg">
                 </div>
-                <div class="column is-twi-thirds">
-                    <p class="is-size-4-touch has-text-grey-dark">
+                <div class="column is-two-thirds">
+                    <p class="is-size-5-touch has-text-grey-dark">
                         I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized that the music
                         industry wasn't as fulfilling as I had hoped. In my spare time I began using Codecademy to learn
                         the basics of web development. I realized that my passion was really in development. I knew I needed
                         some education beyond what Codecademy could provide so I joined Nashville Software School in April
                         2016.
                     </p>
-                    <p class="is-size-4-touch has-text-grey-dark">
-                        Since graduating from NSS I have had many great opportunities including giving back to NSS by spending a year as a junior instructor.
-                        I taught Python/Django, C#/.Net Core, and Ruby/Rails. After teaching, I took a position at a marketing agency working with Craft CMS, Vue, and Laravel.
+                    <p class="is-size-5-touch has-text-grey-dark">
+                        Since graduating from NSS I have had many great opportunities including, teaching at NSS.
+                        I helped teach Python, Ruby, and C# while I was there. After teaching, I took a position at a marketing agency working with Craft CMS, Vue, and Laravel.
                         I'm currently working with Python, Flask, Angular and AngularJS.
                     </p>
-                    <p class="is-size-4-touch has-text-grey-dark">
+                    <p class="is-size-5-touch has-text-grey-dark">
                         My dog, however, is still not happy with my chosen career path. Or really any career that involves leaving the house without
                         him.
                     </p>
@@ -123,7 +123,7 @@
 
         <div id="contact" class="contact section">
             <h1 class="title is-size-2-touch">Contact</h1>
-            <div class="contactInfo is-size-4-touch has-text-grey-dark">
+            <div class="contactInfo is-size-5-touch has-text-grey-dark">
                 <p>If you'd like to talk about code, dogs, or music find me here:</p>
                 <div class="links">
                     <p>

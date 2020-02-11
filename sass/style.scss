@@ -1,7 +1,11 @@
+$card-header-shadow: 0 1px 0 rgba(10, 10, 10, 0.1);
+$section-padding: 0;
+
 @import '../node_modules/bulma/bulma.sass';
 @import '../node_modules/bulma-extensions/bulma-tooltip/dist/css/bulma-tooltip.sass';
 @import 'https://fonts.googleapis.com/css?family=Lobster|Poiret+One';
 @import url('https://fonts.googleapis.com/css?family=Noticia+Text|Play');
+
 $headerFont: 'Noticia Text', serif;
 body {
     color: #FFFAFA;

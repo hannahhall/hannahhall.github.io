@@ -31,19 +31,14 @@
     margin-right: 10px
 }
 
-@media (min-width: 769px) {
-    .hero {
-        min-height: 100vh;
-    }
-}
-
-.fixed {
-    top: 0;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
+.is-fixed-top {
     background-color: #00d1b2 !important;
     animation: fadein 1s;
+}
+
+.navbar-end {
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
 @keyframes fadein {

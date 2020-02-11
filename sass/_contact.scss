@@ -1,5 +1,6 @@
 .contact {
-  min-height: 90vh;
+  font-family: 'Play', sans-serif;
+  min-height: 75vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -11,15 +12,17 @@
 
 .contactInfo {
   padding: 0.5em;
-  p {
-      display: block;
-      letter-spacing: 0.1em;
-      text-align: center;
-  }
 }
 
-.links img {
-  padding: 0.5em;
+.links {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  margin: 15px auto 0;
+
+  p {
+    margin: 5px 0;
+  }
 }
 
 .footer {
@@ -41,5 +44,16 @@
         font-size: 0.6em;
       }
     }
+  }
+}
+
+.columns.is-desktop {
+  margin: auto;
+  max-width: 1152px;
+}
+
+.about {
+  .title {
+    padding-top: 2rem;
   }
 }
