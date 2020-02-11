@@ -6,38 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>Hannah Hall | Software Developer</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body ng-app="app" ng-controller="ProjectsCtrl as vm">
     <div class="hero is-primary is-medium is-bold">
-        <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-                    <div id="navbarMenuHeroA" class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item has-text-weight-semibold" href="#projects">
-                                Projects
-                            </a>
-                            <a class="navbar-item has-text-weight-semibold" href="#about">
-                                About
-                            </a>
-                            <a class="navbar-item has-text-weight-semibold" href="#contact">
-                                Contact
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
         <div class="hero-body">
             <div class="container tile is-parent">
                 <div class="tile is-child has-text-centered-mobile">
@@ -56,32 +29,52 @@
                 </div>
             </div>
         </div>
+        <div class="hero-foot">
+            <nav class="navbar tabs">
+              <div class="container">
+                <div class="navbar-end">
+                    <div class="navbar-brand">
+                        <a class="navbar-item has-text-weight-semibold" href="#projects">
+                            Projects
+                        </a>
+                        <a class="navbar-item has-text-weight-semibold" href="#about">
+                            About
+                        </a>
+                        <a class="navbar-item has-text-weight-semibold" href="#contact">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </nav>
+        </div>
     </div>
 
-    <div class="container" >
-        <div id="projects" class="projects section">
+    <div class="container is-fluid">
+        <div id="projects" class="projects">
             <h1 class="title is-size-2-touch">Featured Projects</h1>
-            <div class="columns is-desktop">
-                <div class="column card is-paddingless" ng-repeat="project in vm.projects">
-                    <div class="card-image">
-                        <figure class="image">
-                            <img ng-src="{{project.img}}" alt="Checkers">
-                        </figure>
-                    </div>
-                    <header class="card-header">
-                        <h3 class="card-header-title is-centered title is-size-3-touch">
-                            {{project.name}}
-                        </h3>
-                    </header>
-                    <div class="card-content">
-                        <div class="content is-size-4-touch has-text-grey-dark has-text-justified" ng-bind-html="vm.renderHtml(project.description)">
-                            <!-- {{project.description}} -->
-                            <br>
+            <div class="columns is-multiline is-mobile">
+                <div class="column is-one-third-desktop is-half-tablet is-full-mobile" ng-repeat="project in vm.projects">
+                    <div class="card is-paddingless">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img ng-src="{{project.img}}" alt="Checkers">
+                            </figure>
                         </div>
+                        <header class="card-header">
+                            <h3 class="card-header-title is-centered title is-size-3-touch">
+                                {{project.name}}
+                            </h3>
+                        </header>
+                        <div class="card-content">
+                            <div class="content is-size-4-touch has-text-grey-dark has-text-justified">
+                                {{project.description}}
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="{{project.url}}" class="card-footer-item has-text-success has-text-weight-semibold is-size-4-touch">View More</a>
+                        </footer>
                     </div>
-                    <footer class="card-footer">
-                        <a href="{{project.url}}" class="card-footer-item has-text-success has-text-weight-semibold is-size-4-touch">View More</a>
-                    </footer>
                 </div>
                 <!-- end repeat -->
             </div>
@@ -103,17 +96,21 @@
                 <div class="img-holder column">
                     <img class="img-fluid" src="img/jack.jpg">
                 </div>
-                <div class="column is-three-fifths">
+                <div class="column is-twi-thirds">
                     <p class="is-size-4-touch has-text-grey-dark">
                         I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized that the music
                         industry wasn't as fulfilling as I had hoped. In my spare time I began using Codecademy to learn
                         the basics of web development. I realized that my passion was really in development. I knew I needed
                         some education beyond what Codecademy could provide so I joined Nashville Software School in April
-                        2016. It has been an amazing learning experience. The learning will never end as I continue on my
-                        journey as a web developer. I'm currently a Junior Instructor at Nashville Software School.
+                        2016.
                     </p>
                     <p class="is-size-4-touch has-text-grey-dark">
-                        My dog, however, is still not happy with my choosen career path. Or really any career that involves leaving the house without
+                        Since graduating from NSS I have had many great opportunities including giving back to NSS by spending a year as a junior instructor.
+                        I taught Python/Django, C#/.Net Core, and Ruby/Rails. After teaching, I took a position at a marketing agency working with Craft CMS, Vue, and Laravel.
+                        I'm currently working with Python, Flask, Angular and AngularJS.
+                    </p>
+                    <p class="is-size-4-touch has-text-grey-dark">
+                        My dog, however, is still not happy with my chosen career path. Or really any career that involves leaving the house without
                         him.
                     </p>
                 </div>
@@ -130,7 +127,7 @@
                 <div class="links">
                     <p>
                         <a href="mailto:hannahkhall13+ws@gmail.com" target="_top" class="has-text-grey-dark">
-                            <span class="icon is-medium is-hidden-touch">
+                            <span class="icon is-medium">
                                 <img src="img/email.png" alt="email" />
                             </span>
                             Email
@@ -138,7 +135,7 @@
                     </p>
                     <p>
                         <a href="https://github.com/hannahhall" class="has-text-grey-dark" target="_blank">
-                            <span class="icon is-medium is-hidden-touch">
+                            <span class="icon is-medium">
                                 <img src="img/github.png" alt="GitHub" />
                             </span>
                             GitHub
@@ -146,7 +143,7 @@
                     </p>
                     <p>
                         <a href="https://www.linkedin.com/in/hannahkhall" class="has-text-grey-dark" target="_blank">
-                            <span class="icon is-medium is-hidden-touch">
+                            <span class="icon is-medium">
                                 <img src="img/Ln.png" alt="" />
                             </span>
                             LinkedIn
@@ -155,13 +152,11 @@
                 </div>
             </div>
             <footer class="footer is-paddingless">
-                <div class="container">
-                    <div class="content is-size-4-touch">
-                        <p class="has-text-grey-dark">&copy; {{vm.year}} Hannah Hall &middot; </p>
-                        <p class="right">
-                            <a href="#" class="has-text-grey-dark">Back to top</a>
-                        </p>
-                    </div>
+                <div class="content is-size-4-touch">
+                    <p class="has-text-grey-dark">&copy; {{vm.year}} Hannah Hall</p>
+                    <p class="right">
+                        <a href="#" class="has-text-grey-dark">Back to top</a>
+                    </p>
                 </div>
             </footer>
 
@@ -174,7 +169,6 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="javascript/bulma.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="javascript/app.js"></script>
 </body>
