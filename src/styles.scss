@@ -2,6 +2,7 @@ $card-header-shadow: 0 1px 0 rgba(10, 10, 10, 0.1);
 $section-padding: 0;
 $navbar-height: 52px;
 $navbar-padding-vertical: 10px;
+$footer-padding: 3rem 1.5rem 2rem;
 
 @import '../node_modules/bulma/bulma.sass';
 @import '../node_modules/flickity/css/flickity.css';
@@ -22,8 +23,7 @@ a:hover {
 
 hr {
     background-color: hsl(141, 71%, 48%);
-    width: 80%;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 
 .img-holder {

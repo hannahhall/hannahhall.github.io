@@ -1,27 +1,28 @@
 <div id="projects" class="projects">
-    <h1 class="title is-size-2-touch">Featured Projects</h1>
-    <div class="columns is-multiline">
-        <div class="column is-one-third-desktop is-half-tablet" *ngFor=" let project of projects">
-            <div class="card is-paddingless">
-                <div class="card-image">
-                    <figure class="image">
-                        <img src="{{project.img}}" alt="Checkers">
-                    </figure>
-                </div>
-                <header class="card-header">
-                    <h3 class="card-header-title is-centered title is-size-3-touch">
-                        {{project.name}}
-                    </h3>
-                </header>
-                <div class="card-content">
-                    <div class="content is-size-5-touch has-text-grey-dark">
-                        {{project.description}}
-                    </div>
-                </div>
-                <footer class="card-footer" ng-if="project.url">
-                    <a href="{{project.url}}" class="card-footer-item has-text-success has-text-weight-semibold is-size-4-touch">View More</a>
-                </footer>
-            </div>
+  <h1 class="title is-size-2-touch">Featured Projects</h1>
+  <div class="columns is-multiline">
+    <div class="column is-one-third-desktop is-half-tablet" *ngFor="let project of projects">
+      <div class="card is-paddingless">
+        <div class="card-image">
+          <figure class="image">
+            <img src="{{project.img}}" alt="Checkers">
+          </figure>
         </div>
+        <header class="card-header">
+          <h3 class="card-header-title is-centered title is-size-3-touch">
+            {{project.name}}
+          </h3>
+        </header>
+        <div class="card-content">
+          <div class="content is-size-5-touch has-text-grey-dark">
+            {{project.description}}
+          </div>
+        </div>
+        <footer class="card-footer" *ngIf="project.url">
+          <a href="{{project.url}}" target="_blank" rel="noopener noreferrer"
+            class="card-footer-item has-text-success has-text-weight-semibold is-size-4-touch">View More</a>
+        </footer>
+      </div>
     </div>
+  </div>
 </div>
