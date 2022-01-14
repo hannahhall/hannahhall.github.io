@@ -4,8 +4,7 @@ $navbar-height: 52px;
 $navbar-padding-vertical: 10px;
 $footer-padding: 3rem 1.5rem 2rem;
 
-@import '../node_modules/bulma/bulma.sass';
-@import '../node_modules/flickity/css/flickity.css';
+@import 'bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css?family=Noticia+Text|Play');
 
 $headerFont: 'Noticia Text', serif;
