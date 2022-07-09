@@ -1,26 +1,42 @@
-<div class="about section" id="about">
-    <h1 class="title is-size-2-touch">About</h1>
-    <div class="columns is-desktop">
-        <div class="img-holder column">
-            <img class="img-fluid" src="assets/jack.jpg">
+<article id="about" class="about-container">
+    <section class="block card">
+        <div class="block-overview">
+            <h2 class="block-heading title is-1">{{statBlock.name}}</h2>
+            <p class="block-subtitle subtitle is-6">{{statBlock.shortDescription}}</p>
         </div>
-        <div class="column is-two-thirds-desktop">
-            <p class="is-size-5-touch has-text-grey-dark">
-                I moved to Nashville in 2009 to attend Belmont and study Music Business. After graduating in 2013, I realized that the music
-                industry wasn't as fulfilling as I had hoped. In my spare time I began using Codecademy to learn
-                the basics of web development. I realized that my passion was really in development. I knew I needed
-                some education beyond what Codecademy could provide so I joined Nashville Software School in April
-                2016.
+        <div class="block-stats">
+            <span><b>Armor Class</b> {{statBlock.armorClass}}</span>
+            <span><b>Max Hit Points</b> {{statBlock.maxHitPoints}}</span>
+            <span><b>Speed</b> {{statBlock.speed}} words per minute</span>
+        </div>
+        <div class="block-scores">
+            <div class="block-score" *ngFor="let score of statBlock.scores">
+                <span class="block-score-title">{{score.name}}</span>
+                <span>{{score.rating}}</span>
+            </div>
+        </div>
+        <div class="block-abilities">
+            <p class="block-ability" *ngIf="statBlock.skills">
+                <b class="block-ability-title">Skills</b> {{statBlock.skills}}
             </p>
-            <p class="is-size-5-touch has-text-grey-dark">
-                Since graduating from NSS I have had many great opportunities including, teaching at NSS.
-                I helped teach Python, Ruby, and C# while I was there. After teaching, I took a position at a marketing agency working with Craft CMS, Vue, and Laravel.
-                I'm currently working with Python, Flask, Angular and AngularJS.
+            <p class="block-ability" *ngIf="statBlock.senses">
+                <b class="block-ability-title">Senses</b> {{statBlock.senses}}
             </p>
-            <p class="is-size-5-touch has-text-grey-dark">
-                My dog, however, is still not happy with my chosen career path. Or really any career that involves leaving the house without
-                him.
+            <p class="block-ability" *ngIf="statBlock.languages">
+                <b class="block-ability-title">Languages</b> {{statBlock.languages}}
             </p>
         </div>
-    </div>
-</div>
+        <div class="block-actions-grid">
+            <div class="block-actions content" *ngIf="statBlock.actions">
+                <h3 class="title is-5">Actions</h3>
+                <p class="block-action" *ngFor="let action of statBlock.actions">
+                    <b class="block-action-name">{{action.name}}</b>:
+                    <span class="block-action-description">{{action.description}}</span>
+                </p>
+            </div>
+        </div>
+        <div class="block-description" *ngIf="statBlock.description">
+            <p>{{statBlock.description}}</p>
+        </div>
+    </section>
+</article>

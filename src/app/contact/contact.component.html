@@ -3,22 +3,13 @@
   <div class="contactInfo is-size-5-touch has-text-grey-dark">
     <p>If you'd like to talk about code, dogs, or music find me here:</p>
     <div class="links">
-      <p>
-        <a href="https://github.com/hannahhall" target="_blank" rel="noopener noreferrer" class="has-text-grey-dark"
+      <p *ngFor="let contact of contacts">
+        <a href="{{contact.link.url}}" target="_blank" rel="noopener noreferrer" class="has-text-grey-dark"
           target="_blank">
           <span class="icon is-medium">
-            <i class="fab fa-github"></i>
+            <i [ngClass]="['fab', contact.icon_class]"></i>
           </span>
-          GitHub
-        </a>
-      </p>
-      <p>
-        <a href="https://www.linkedin.com/in/hannahkhall" target="_blank" rel="noopener noreferrer"
-          class="has-text-grey-dark" target="_blank">
-          <span class="icon is-medium">
-            <i class="fab fa-linkedin"></i>
-          </span>
-          LinkedIn
+          {{contact.link.text}}
         </a>
       </p>
     </div>

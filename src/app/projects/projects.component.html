@@ -5,12 +5,12 @@
       <div class="card is-paddingless">
         <div class="card-image">
           <figure class="image">
-            <img src="{{project.img}}" alt="Checkers">
+            <img src="{{project.image}}" alt="{{project.title}}">
           </figure>
         </div>
         <header class="card-header">
           <h3 class="card-header-title is-centered title is-size-3-touch">
-            {{project.name}}
+            {{project.title}}
           </h3>
         </header>
         <div class="card-content">
@@ -18,9 +18,9 @@
             {{project.description}}
           </div>
         </div>
-        <footer class="card-footer" *ngIf="project.url">
-          <a href="{{project.url}}" target="_blank" rel="noopener noreferrer"
-            class="card-footer-item has-text-success has-text-weight-semibold is-size-4-touch">View More</a>
+        <footer class="card-footer" *ngIf="project.links">
+          <a *ngFor="let link of project.links" href="{{link.url}}" target="_blank" rel="noopener noreferrer"
+            class="card-footer-item has-text-success has-text-weight-semibold is-size-4-touch">{{link.text}}</a>
         </footer>
       </div>
     </div>

@@ -1,24 +1,27 @@
 <!-- hero -->
-<hero></hero>
-<!-- projects -->
-<div class="container">
-  <projects></projects>
-  <hr>
-  <tech></tech>
-  <hr>
-  <about></about>
-  <hr>
-  <contact></contact>
-</div>
-<footer class="footer">
+<loading @showHideTrigger *ngIf="projectService.isLoading | async; else appPage" class="loading-container"></loading>
+<ng-template #appPage>
+  <hero></hero>
+  <!-- projects -->
   <div class="container">
-    <div class="navbar">
-      <p class="navbar-start has-text-grey-dark">
-        <span class="icon"><i class="far fa-copyright"></i></span> {{year}} Hannah Hall
-      </p>
-      <p class="navbar-end has-text-grey-dark">
-        <a href="#" class="has-text-grey-dark">Back to top</a>
-      </p>
-    </div>
+    <projects></projects>
+    <hr>
+    <tech></tech>
+    <hr>
+    <about></about>
+    <hr>
+    <contact></contact>
   </div>
-</footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="navbar">
+        <p class="navbar-start has-text-grey-dark">
+          <span class="icon"><i class="far fa-copyright"></i></span> {{year}} Hannah Hall
+        </p>
+        <p class="navbar-end has-text-grey-dark">
+          <a href="#" class="has-text-grey-dark">Back to top</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</ng-template>

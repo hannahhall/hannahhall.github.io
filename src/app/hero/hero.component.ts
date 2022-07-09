@@ -1,24 +1,45 @@
-import { Component, ViewChild, ElementRef, AfterViewInit, HostListener, Inject } from '@angular/core';
+import { Component, ViewChild, ElementRef, HostListener, Inject, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+// @ts-ignore
+import Flickity from 'flickity';
+import { Project } from '../projects/projects.model';
+import { ProjectService } from '../projects/projects.service';
 
-import { projects } from '../projects';
 
 @Component({
   selector: 'hero',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss']
 })
-export class HeroComponent implements AfterViewInit {
-  projects: any = projects;
-  @ViewChild('navbar', {static: true}) navbar: ElementRef;
-  @ViewChild('hero', {static: true}) hero: ElementRef;
+export class HeroComponent implements OnInit{
+  @ViewChild('navbar', { static: true }) navbar: ElementRef;
+  @ViewChild('hero', { static: true }) hero: ElementRef;
 
-  constructor(@Inject(DOCUMENT) private document: Document) {
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private projectService: ProjectService,
+  ) { }
 
+  ngOnInit(): void {
+    this.projectService.projects.subscribe((res: Project[]) => {
+      this.loadCarousel(res)
+    })
   }
 
-  ngAfterViewInit() {
+  loadCarousel(data: Project[]) {
+    const flkty = new Flickity('.carousel', {
+      "autoPlay": true, "lazyLoad": true, "percentPosition": false
+    });
+    const cells = data.map((project: Project) => {
+      const image = new Image()
+      // image.src = project.image
+      image.setAttribute('style', "max-height: 240px;")
+      image.setAttribute('class', 'carousel-cell')
+      image.setAttribute('data-flickity-lazyload', project.image)
+      return image
+    })
 
+    flkty.append(cells)
   }
 
   @HostListener('window:scroll', [])
@@ -36,10 +57,5 @@ export class HeroComponent implements AfterViewInit {
       this.navbar.nativeElement.classList.remove('is-bold');
       body.classList.remove('has-navbar-fixed-top');
     }
-    // if (this.document.body.scrollTop > 20 ||     
-    // this.document.documentElement.scrollTop > 20) {
-    //   document.getElementById('subTitle').classList.add('red');
-    //   document.getElementById('paragraph').classList.add('green');
-    // }
   }
 }

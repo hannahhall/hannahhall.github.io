@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { projects } from '../projects';
+import { Project } from './projects.model';
+import { ProjectService } from './projects.service';
 
 @Component({
   selector: 'projects',
@@ -7,6 +8,15 @@ import { projects } from '../projects';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
-  projects: any = projects;
+  projects: Project[];
 
+  constructor(
+    private projectService: ProjectService,
+  ) { }
+
+  ngOnInit() {
+    this.projectService.projects.subscribe((res: Project[]) => {
+      this.projects = res
+    })
+  }
 }

@@ -31,9 +31,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/flickity/dist/flickity.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/flickity/dist/flickity.pkgd.min.js"
+            ]
           },
           "configurations": {
             "production": {

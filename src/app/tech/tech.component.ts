@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { techs } from '../projects';
+import { Tech } from './tech.model';
+import { TechService } from './tech.service';
 
 @Component({
   selector: 'tech',
@@ -7,11 +8,15 @@ import { techs } from '../projects';
   styleUrls: ['./tech.component.scss']
 })
 export class TechComponent {
-  techs: any = techs;
+  techs: Tech[];
 
-  constructor() { }
+  constructor(
+    private techService: TechService,
+  ) { }
 
   ngOnInit() {
+    this.techService.techs.subscribe((res: Tech[]) => {
+      this.techs = res
+    })
   }
-
 }
