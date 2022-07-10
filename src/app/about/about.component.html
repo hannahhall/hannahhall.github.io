@@ -35,8 +35,8 @@
                 </p>
             </div>
         </div>
-        <div class="block-description" *ngIf="statBlock.description">
-            <p>{{statBlock.description}}</p>
+        <div class="block-description">
+            <p *ngFor="let p of paragraphs" class="block-description-text">{{p.text}}</p>
         </div>
     </section>
 </article>

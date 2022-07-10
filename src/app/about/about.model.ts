@@ -22,3 +22,8 @@ export interface StatBlock {
   description: string;
   senses: string;
 }
+
+export interface Paragraph {
+  id: number;
+  text: string;
+}

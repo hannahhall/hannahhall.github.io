@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { StatBlock } from './about.model';
+import { Paragraph, StatBlock } from './about.model';
+import { ParagraphService } from './about.service';
 
 @Component({
   selector: 'about',
@@ -59,9 +60,16 @@ export class AboutComponent {
     description: ''
 
   };
-  constructor() { }
+  paragraphs: Paragraph[];
+
+  constructor(
+    private paragraphService: ParagraphService,
+  ) { }
 
   ngOnInit() {
+    this.paragraphService.paragraphs.subscribe((res: Paragraph[]) => {
+      this.paragraphs = res
+    })
   }
 
 }
